@@ -1,3 +1,10 @@
+---
+toc: true
+toc-depth: 2
+bibliography: ../references.bib
+csl: ../gost-r-7-0-5-2008-numeric.csl
+---
+
 ::: {custom-style="LeftText"}
 ***Литвиненко А.В.***
 
@@ -7,13 +14,8 @@
 
 <br>
 
-::: {custom-style="CenterText"}
-**РОЛЬ ЦИФРОВЫХ ТЕХНОЛОГИЙ И ИСКУССТВЕННОГО 
-ИНТЕЛЕКТА В РАЗВИТИИ ЭКОНОМИК СТРАН БРИКС**
-:::
+# РОЛЬ ЦИФРОВЫХ ТЕХНОЛОГИЙ И ИСКУССТВЕННОГО ИНТЕЛЕКТА В РАЗВИТИИ ЭКОНОМИК СТРАН БРИКС
 
-<br>
-<br>
 <br>
 
 ::: {custom-style="WidthText"}
