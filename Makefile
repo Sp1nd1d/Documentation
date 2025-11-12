@@ -19,4 +19,4 @@ docx:
 		--output=$(DOCX)
 
 clean:
-	rm -rf $(OUT_DIR)
+	rmdir /s /q output
