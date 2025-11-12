@@ -1,6 +1,6 @@
 SRC = $(wildcard docs/*.md)
 OUT_DIR = output
-DOCX = $(OUT_DIR)/Документ.docx
+DOCX = $(OUT_DIR)/Document.docx
 REF = reference_word.docx
 
 all: docx
