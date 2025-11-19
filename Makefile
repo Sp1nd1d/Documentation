@@ -1,9 +1,8 @@
 SRC = $(wildcard docs/*.md)
 OUT_DIR = output
 DOCX = $(OUT_DIR)/Document.docx
-REF = reference_word.docx
-BIB = references.bib
-CSL = gost-r-7-0-5-2008-numeric.csl
+REF = reference.docx
+#--reference-doc=$(REF)
 
 all: docx
 
@@ -11,12 +10,15 @@ docx:
 	if not exist $(OUT_DIR) mkdir $(OUT_DIR)
 	pandoc $(SRC) \
 		--from markdown \
+		-d default.yaml \
+		--from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex \
+		--toc \
+		--resource-path=docs;pictures \
+		--filter pandoc-crossref \
 		--citeproc \
 		--reference-doc=$(REF) \
-		--bibliography=$(BIB) \
-		--csl=$(CSL) \
-		--toc \
-		--output=$(DOCX)
+		--output=$(DOCX) \
+		--to=docx
 
 clean:
 	rmdir /s /q output
