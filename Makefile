@@ -2,7 +2,6 @@ SRC = $(wildcard docs/*.md)
 OUT_DIR = output
 DOCX = $(OUT_DIR)/Document.docx
 REF = reference.docx
-#--reference-doc=$(REF)
 
 all: docx
 
@@ -11,14 +10,12 @@ docx:
 	pandoc $(SRC) \
 		--from markdown \
 		-d default.yaml \
-		--from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex \
 		--toc \
 		--resource-path=docs;pictures \
 		--filter pandoc-crossref \
 		--citeproc \
 		--reference-doc=$(REF) \
-		--output=$(DOCX) \
-		--to=docx
+		--output=$(DOCX)
 
 clean:
 	rmdir /s /q output
