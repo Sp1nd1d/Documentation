@@ -1,0 +1,15 @@
+metadata:
+  author: Литвиненко А.В.
+  date: | 
+    Санкт-Петербургский университет технологий управления и экономики        
+    г. Санкт-Петербург, Россия
+  figureTitle: Рисунок 
+  figPrefix: рис.
+  titleDelim: .
+  tableTitle: Таблица
+  tblPrefix: табл.
+  eqnPrefix: форм.
+  toc-title: Оглавление
+  link-citations: true
+  bibliography: references.bib
+  csl: gost-r-7-0-5-2008-numeric.csl
